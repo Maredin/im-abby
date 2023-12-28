@@ -1,0 +1,91 @@
+.skill {
+    width: 100%;
+    background: #131212;
+    padding: 102px 52px 124px 52px;
+    margin-top: 160px; 
+}
+.skill__wrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 8px;
+    row-gap: 55px;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.skill__item {
+    color: #FFF;
+    display: flex;
+    max-width: 440px;
+    gap: 35px;
+}
+
+.skill__item-numb {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 100;
+    margin-top: 17px;
+}
+
+.skill__item-desc {
+    max-width: 325px;
+}
+
+.skill__item-title {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.skill__item-txt {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+}
+
+@media(max-width: 1440px) {
+    .skill {
+        margin-top: calc((100vw - 635px)/(1440 - 635) * (160 - 376) + 376px);
+        padding: 102px 52px 124px 52px;
+        padding-top: calc((100vw - 320px)/(1440 - 320) * (102 - 42) + 42px);
+        padding-bottom: calc((100vw - 320px)/(1440 - 320) * (124 - 42) + 42px);
+        padding-right: calc((100vw - 320px)/(1440 - 320) * (52 - 29) + 29px);
+        padding-left: calc((100vw - 320px)/(1440 - 320) * (52 - 29) + 29px);
+        row-gap: calc((100vw - 320px)/(1440 - 320) * (55 - 40) + 40px);
+    }
+
+    .skill__item {
+        max-width: calc((100vw - 320px)/(1440 - 320) * (440 - 298) + 298px);
+        gap: calc((100vw - 320px)/(1440 - 320) * (35 - 26) + 26px);
+    }
+
+    .skill__item-numb {
+        font-size: calc((100vw - 320px)/(1440 - 320) * (70 - 45) + 45px);
+        margin-top: calc((100vw - 320px)/(1440 - 320) * (17 - 11) + 11px);
+    }
+
+    .skill__item-desc {
+        max-width: calc((100vw - 320px)/(1440 - 320) * (325 - 220) + 220px);
+    }
+
+    .skill__item-title {
+        font-size: calc((100vw - 320px)/(1440 - 320) * (40 - 25) + 25px);
+    }
+
+    .skill__item-txt {
+        font-size: calc((100vw - 320px)/(1440 - 320) * (18 - 14) + 14px);
+    }
+}
+
+@media(max-width: 635px) {
+    .skill {
+        margin-top: 300px;
+    }
+}
+
+@media(max-width: 635px) {
+    .skill {
+        margin-top: calc((100vw - 320px)/(635 - 320) * (575 - 310) + 310px);
+    }
+}

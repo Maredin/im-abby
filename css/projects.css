@@ -21,9 +21,12 @@
 
 .projects__item {
     max-width: 1040px;
-    height: 447px;
+    min-height: 447px;
     padding: 92px 46px;
     color: #FFF;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65% bottom;
 }
 
 .projects__item:nth-child(1) {
@@ -53,7 +56,7 @@
 
 .projects__item-about,
 .projects__item-desc {
-    width: 433px;
+    max-width: 433px;
 }
 
 .projects__item-about {
@@ -83,4 +86,45 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+}
+
+@media(max-width: 1440px) {
+    .projects {
+        margin-top: calc((100vw - 320px)/(1440 - 320) * (170 - 100) + 100px);
+    }
+
+    .projects__title {
+        font-size: calc((100vw - 320px)/(1440 - 320) * (120 - 60) + 60px);
+    }
+
+    .projects__wrapper {
+        gap: calc((100vw - 320px)/(1440 - 320) * (78 - 59) + 59px);
+    }
+
+    .projects__item {
+        padding-top: calc((100vw - 320px)/(1440 - 320) * (92 - 60) + 60px);
+        padding-bottom: calc((100vw - 320px)/(1440 - 320) * (92 - 47) + 47px);
+        padding-left: calc((100vw - 320px)/(1440 - 320) * (46 - 20) + 20px);
+        padding-right: calc((100vw - 320px)/(1440 - 320) * (46 - 20) + 20px);
+        height: calc((100vw - 320px)/(1440 - 320) * (447 - 620) + 620px);
+    }
+
+    .projects__item-about,
+    .projects__item-desc {
+        width: 433px;
+    }
+
+    .projects__item-about,
+    .projects__item-about span {
+        font-size: calc((100vw - 320px)/(1440 - 320) * (45 - 40) + 40px);
+    }
+
+    .projects__item-desc {
+        font-size: calc((100vw - 320px)/(1440 - 320) * (18 - 17) + 17px);
+    }
+
+    .projects__item-desc a {
+        margin-top: calc((100vw - 320px)/(1440 - 320) * (48 - 45) + 45px);
+        font-size: calc((100vw - 320px)/(1440 - 320) * (16 - 15) + 15px);
+    }
 }

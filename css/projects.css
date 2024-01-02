@@ -2,6 +2,7 @@
     max-width: 1040px;
     margin: 0 auto;
     margin-top: 170px;
+    padding-bottom: 170px;
 }
 
 .projects__title {
@@ -10,6 +11,7 @@
     font-style: normal;
     font-weight: 800;
     line-height: 93.5%;
+    padding: 15px;
 }
 
 .projects__wrapper {
@@ -91,10 +93,11 @@
 @media(max-width: 1440px) {
     .projects {
         margin-top: calc((100vw - 320px)/(1440 - 320) * (170 - 100) + 100px);
+        padding-bottom: calc((100vw - 320px)/(1440 - 320) * (170 - 100) + 100px)
     }
 
     .projects__title {
-        font-size: calc((100vw - 320px)/(1440 - 320) * (120 - 60) + 60px);
+        font-size: calc((100vw - 320px)/(1440 - 320) * (120 - 55) + 55px);
     }
 
     .projects__wrapper {

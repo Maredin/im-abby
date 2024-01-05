@@ -41,6 +41,7 @@
     width: 30px;
     height: 2px;
     background: #000;
+    transition: all 0.7s;
 }
 
 @media(max-width: 767px) {
@@ -52,18 +53,22 @@
 
 @media(max-width: 424px) {
     .header__nav {
-        display: none;
+        display: flex;
         position: absolute;
         flex-direction: column;
         top: 89px;
         right: 0;
         gap: 15px;
         text-align: end;
-        height: 161px;
+        height: 0px;
         overflow: hidden;
+        width: 100%;
+        background-color: white;
+        transition: all 1s;
+        z-index: 1;
     }
 
-    /*     .burger {
+    .burger {
         display: block;
-    } */
+    }
 }

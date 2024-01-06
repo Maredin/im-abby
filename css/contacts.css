@@ -79,6 +79,12 @@
     text-decoration: underline;
 }
 
+.contacts__error {
+    width: 100%;
+    color: red;
+    display: none;
+}
+
 @media(max-width: 1440px) {
     .contacts {
         margin-top: calc((100vw - 320px)/(1440 - 320) * (327 - 100) + 100px);

@@ -2,8 +2,9 @@
     width: 100%;
     background: #131212;
     padding: 102px 52px 124px 52px;
-    margin-top: 160px; 
+    margin-top: 160px;
 }
+
 .skill__wrapper {
     display: flex;
     justify-content: space-between;
@@ -13,6 +14,7 @@
     max-width: 1440px;
     margin: 0 auto;
 }
+
 .skill__item {
     color: #FFF;
     display: flex;
@@ -80,12 +82,6 @@
 
 @media(max-width: 635px) {
     .skill {
-        margin-top: 300px;
-    }
-}
-
-@media(max-width: 635px) {
-    .skill {
-        margin-top: calc((100vw - 320px)/(635 - 320) * (575 - 310) + 310px);
+        margin-top: calc((100vw - 320px)/(635 - 320) * (575 - 380) + 380px);
     }
 }
